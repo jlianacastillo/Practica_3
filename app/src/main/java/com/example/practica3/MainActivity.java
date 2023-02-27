@@ -28,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.opcion2:
                 return true;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee11f46 (Initial commit)
             case R.id.opcion3:
                 return true;
         }

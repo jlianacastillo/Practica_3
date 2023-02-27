@@ -2,6 +2,8 @@ package com.example.practica3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,17 +25,18 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        int rum = item.getItemId();
+        switch(rum) {
             case R.id.opcion1:
+                Intent i = new Intent(this, Activity_opc1.class);
+                startActivity(i);
                 return true;
             case R.id.opcion2:
-                return true;
-
-            case R.id.opcion3:
+                Intent j = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.solutionscenter.com.mx"));
+                startActivity(j);
                 return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

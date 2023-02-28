@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 return true;
             case R.id.opcion2:
-                Intent j = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.solutionscenter.com.mx"));
+                Intent j = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/camiloo_185/"));
                 startActivity(j);
                 return true;
         }
